@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <h1 id="judul">Masukkan suhu derajat Celcius (&deg;C) ke Kotak dibawah untuk mendapatkan hasil
+      konversi
+      dalam bentuk Fahrenheit (&deg;F)</h1>
+    <div class="input">
+      <input type="number" name="celcius" id="inputNilai" autofocus required><span>&deg;C</span>
+    </div>
+    <div class="tombol">
+      <button onclick="reset()">Reset</button>
+      <button class="btn-reverse">Reverse</button>
+    </div>
+    <div class="hasil-konversi">
+      <input type="number" id="hasil" readonly><span>&deg;F</span>
+    </div>
+    <div class="cara">
+      <textarea type="text" name="cara" id="cara" cols="20" rows="10"></textarea>
+    </div>
+    <div class="formula">
+      <div class="description-celcius">
+        <h2>How to Convert Celcius to Fahrenheit</h2>
+        <p>0 Degrees Celcius is Equal to 32 Degrees Fahrenheit:
+          <br>0 &degC = 32 &degF
+          <br>The temperature in degrees Fahrenheit (&degF) is equal to the temperature in degrees Celcius (&degC) times
+          9/5 plus 32:
+          <br></p>
+      </div>
+      <div class="description-fahrenheit">
+        <h2>How to Convert Fahrenheit to Celcius</h2>
+        <p>0 Degrees Fahrenheit is Equal to -17 Degrees Fahrenheit:
+          <br>0 &degF = -17.7778 &degC
+          <br>The temperature in degrees Celcius (&degC) is equal to the temperature in degrees Fahrenheit (&degF) minus
+          32, times 9/5:
+          <br></p>
+      </div>
+    </div>
+
+
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

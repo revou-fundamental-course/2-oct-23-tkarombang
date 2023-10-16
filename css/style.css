@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+
+  --primary: #a5d05c;
+  --second: #f2b659;
+  --thernary: #79af65;
+  --fontColor: #615858;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 2rem;
+  background-color: var(--primary);
+  margin: 5rem 5rem;
+  border-radius: .5rem;
+}
+
+h1 {
+  color: var(--fontColor);
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 1.8rem;
+}
+
+.input input {
+  height: 3vh;
+  width: 20vw;
+  border-radius: .3rem 0 0 .3rem;
+  margin-bottom: 1rem;
+}
+
+.input span {
+  font-weight: 600;
+  padding: .4rem .6rem;
+  margin: .1rem;
+  position: relative;
+  border-radius: 0 .3rem .3rem 0;
+  color: var(--fontColor);
+  background-color: var(--thernary);
+}
+
+.tombol button {
+  border: 0;
+  height: 2rem;
+  width: 5rem;
+  background-color: var(--second);
+  color: var(--fontColor);
+  font-size: .8rem;
+  font-weight: 600;
+  border-radius: .2rem;
+}
+
+.tombol button:hover {
+  background-color: var(--thernary);
+  color: var(--primary);
+}
+
+.tombol button:active {
+  transform: scale(.9);
+  transition: .5s;
+}
+
+.hasil-konversi input {
+  height: 3vh;
+  width: 20vw;
+  border-radius: .3rem 0 0 .3rem;
+  margin-top: 1rem;
+
+}
+
+.hasil-konversi span {
+  font-weight: 600;
+  padding: .4rem .6rem;
+  margin: .1rem;
+  position: relative;
+  border-radius: 0 .3rem .3rem 0;
+  color: var(--fontColor);
+  background-color: var(--thernary);
+}
+
+.cara textarea {
+  margin-top: 2rem;
+  width: 25vw;
+}
+
+.description-celcius {
+  flex-direction: column;
+  margin-top: 1.5rem;
+  color: var(--thernary);
+}
+
+.description-fahrenheit {
+  margin-top: 1.5rem;
+  flex-direction: column;
+  color: var(--thernary);
+}
+
+@media (max-width: 450px) {
+
+  html {
+    font-size: 55%;
+  }
+
+  .input input {
+    height: 2vh;
+  }
+
+  .hasil-konversi input {
+    height: 2vh;
+  }
+}
